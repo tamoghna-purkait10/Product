@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	private String cartUrl = "http://localhost:8083/api/cart";
+	private String cartUrl = "http://localhost:1111/api/cart";
 	
 	@Bean
 	public RestTemplate restTemplate() {

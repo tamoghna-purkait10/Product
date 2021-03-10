@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import com.cognizant.bootup.cartservice.dao.CartDao;
 import com.cognizant.bootup.cartservice.entity.Cart;
 import com.cognizant.bootup.cartservice.model.UserCart;
+
 import com.cognizant.bootup.cartservice.model.Price;
 import com.cognizant.bootup.cartservice.model.Product;
 
@@ -30,7 +31,7 @@ public class CartServiceImpl implements CartService {
 	@Autowired
 	private CartDao cartDao;
 	
-	private String priceUrl = "http://price-service/api/price";
+	private String priceUrl = "http://price-proxy/api/price";
 
 	@Override
 	public UserCart getCartTotal(UserCart cart, String loggedUser) {
